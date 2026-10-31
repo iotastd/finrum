@@ -1,6 +1,6 @@
 // Single product's interface
 export interface ProductObject {
-  id: ProductId;
+  id: ProductIdObject;
   name: ProductNameObject;
   media: ProductMedia[];
   location: ProductLocation;
@@ -8,7 +8,12 @@ export interface ProductObject {
 }
 
 // Utils for products interface
-export type ProductId = number;
+export interface ProductIdObject {
+  object: number;
+  metrit: string;
+  shelf: string;
+  sales: string;
+};
 export interface ProductNameObject {
   general: string;
   official: string;
